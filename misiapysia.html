@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Misia Pysia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: pink;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #3498db;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        #message {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin-top: 20px;
+        }
+
+        #image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px #888888;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        button {
+            background-color: #27ae60;
+            color: #fff;
+            font-size: 1em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #2ecc71;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 class="animate__animated animate__bounce">Hejka Skarbie!</h1>
+        <p class="animate__animated animate__fadeIn">Hejka misiu zoabcz jaka super strone dla Ciebie i tylko dla Ciebie stworzylem.kckckckckc</p>
+
+        <img id="image" src="cat-kiss.gif" alt="Animowany obrazek dla Karoliny">
+
+        <p id="message" class="animate__animated animate__flash">Dla mojej gwiazdy, która rozświetla moje życie!</p>
+
+        <button onclick="changeMessage()">Kocham cie</button>
+    </div>
+
+    <script>
+        function changeMessage() {
+            const newMessage = "Jesteś dla mnie najważniejsza!";
+            $("#message").text(newMessage);
+        }
+    </script>
+</body>
+</html>
